@@ -2,7 +2,7 @@
 // Debugging: Check if path is correct
 
 // Include Composer's autoloader dynamically
-require_once __DIR__ . '/../../vendor/autoload.php';  // Correct path
+require_once __DIR__ . '/../vendor/autoload.php';  // Correct path
 
 // Start session only if not started
 if (session_status() === PHP_SESSION_NONE) {
