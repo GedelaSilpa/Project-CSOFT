@@ -1,21 +1,23 @@
 {
-    "require-dev": {
-        "phpmailer/phpmailer": "^6.11"
+    "name": "silpa/project-csoft",
+    "description": "Project-CSOFT PHP Application",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
     },
     "require": {
-        "omnipay/common": "^3.4",
-        "symfony/http-client": "^7.3",
-        "php-http/httplug": "^2.4",
-        "nyholm/psr7": "^1.8",
-        "cashfree/omnipay-cashfree": "^1.0",
-        "php-http/guzzle7-adapter": "1.0",
-        "guzzlehttp/guzzle": "7.8",
-        "omnipay/paypal": "^3.0",
-        "razorpay/razorpay": "^2.9"
+        "phpmailer/phpmailer": "^7.0",
+        "vlucas/phpdotenv": "^5.6"
     },
     "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true,
         "allow-plugins": {
             "php-http/discovery": true
         }
-    }
+    },
+    "minimum-stability": "stable",
+    "license": "MIT"
 }
