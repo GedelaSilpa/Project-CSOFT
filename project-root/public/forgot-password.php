@@ -8,8 +8,8 @@ use PHPMailer\PHPMailer\Exception;
 $error = '';
 $success = '';
 
-// Fetch SMTP credentials from the AdminDetails table
-$stmt = $pdo->prepare("SELECT SMTPUsername, SMTPPassword FROM AdminDetails WHERE IsActive = 1 LIMIT 1");
+// Fetch SMTP credentials from the admindetails table
+$stmt = $pdo->prepare("SELECT SMTPUsername, SMTPPassword FROM admindetails WHERE IsActive = 1 LIMIT 1");
 $stmt->execute();
 $smtpDetails = $stmt->fetch();
 

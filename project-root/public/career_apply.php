@@ -16,7 +16,7 @@ if (!$career) die("Invalid job selected.");
 $success = $error = '';
 
 // Fetch SMTP credentials
-$stmt = $pdo->prepare("SELECT SMTPUsername, SMTPPassword FROM AdminDetails WHERE IsActive = 1 LIMIT 1");
+$stmt = $pdo->prepare("SELECT SMTPUsername, SMTPPassword FROM admindetails WHERE IsActive = 1 LIMIT 1");
 $stmt->execute();
 $smtp = $stmt->fetch();
 if (!$smtp) die('SMTP credentials not found.');
