@@ -41,7 +41,7 @@ if (isset($_GET['edit_id']) && isset($_SESSION['user_type']) && $_SESSION['user_
 <!-- Navigation -->
 <nav>
     <a href="index.php" class="logo-wrapper">
-        <img src="assets/Captcha/Csoft_logo.png" alt="Company Logo" class="logo-img">
+        <img src="assets/captcha/Csoft_logo.png" alt="Company Logo" class="logo-img">
     </a>
     <ul>
         <li>
