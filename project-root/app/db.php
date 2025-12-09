@@ -7,7 +7,13 @@
 // Custom env() function
 // -----------------------------
 function env($key, $default = null) {
-    return $_ENV[$key] ?? getenv($key) ?? $default;
+    $value = getenv($key);
+
+    if ($value === false) {
+        $value = $_SERVER[$key] ?? $default;
+    }
+
+    return $value;
 }
 
 
